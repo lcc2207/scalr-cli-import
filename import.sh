@@ -13,7 +13,7 @@ do
 done
 
 # get the deploy command from each instance
-scalr-ctl farms list-servers --farmId $farmId | jq '.data[] | "\(.publicIp[0]) \(.scalrAgent.deployCommand)"' > deploy.txt
+scalr-ctl farms list-servers --farmId $farmId | jq -r '.data[] | "\(.publicIp[0]),\(.scalrAgent.deployCommand)"' > deploy.txt
 
 # ssh in
 mkdir -p instances
