@@ -1,0 +1,17 @@
+{
+  "alias": "test-1",
+  "cloudServerId": "i-xxx",
+  "cloudPlatform": "ec2",
+  "cloudLocation": "us-west-1",
+  "instanceType":{"id":"m1.small"},
+  "placement": {
+  "region": "us-west-1"
+  },
+  "platform": "ec2",
+  "role": {
+    "id": 1
+  },
+  "scaling": {
+    "enabled": false
+  }
+}

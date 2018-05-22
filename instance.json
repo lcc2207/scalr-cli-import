@@ -1,15 +1,15 @@
 {
-  "alias": "test-1",
-  "cloudServerId": "i-xxx",
-  "cloudPlatform": "ec2",
-  "cloudLocation": "us-west-1",
-  "instanceType":{"id":"m1.small"},
+  "alias": "import-test",
+  "cloudServerId": "vm-xxx",
+  "cloudPlatform": "vmware",
+  "cloudLocation": "datacenter-21",
+  "instanceType":{"id":"0f52797dd8ba"},
   "placement": {
-  "region": "us-west-1"
+  "region": "datacenter-21"
   },
-  "platform": "ec2",
+  "platform": "vmware",
   "role": {
-    "id": 1
+    "id": 111
   },
   "scaling": {
     "enabled": false
