@@ -25,7 +25,7 @@ Get the instace ID from the AWS console or CLI and create a file named
 - Copy the ec2-instances.json to instance.json
 - Make sure to update the contents of the file to match your environment 
 
-#### Update line below in the "import.sh" script with the actual farm role ID that the servers will be impprted into
+#### Update line below in the "import.sh" script with the actual farm role ID that the servers will be imported into
 * export farmRoleId=xxxx
 
 #### Execute
@@ -54,7 +54,7 @@ Get the instace ID from the VCenter or the PowerCLI and create a file named
 - Copy the vmware-instances.json to instance.json
 - Make sure to update the contents of the file to match your environment 
 
-#### Update line below in the "import.sh" script with the actual farm role ID that the servers will be impprted into
+#### Update line below in the "import.sh" script with the actual farm role ID that the servers will be imported into
 * export farmRoleId=xxxx
 
 #### Execute
