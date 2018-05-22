@@ -37,7 +37,7 @@ Get the instace ID from the VCenter or the PowerCLI and create a file named
 
 
 # copy the instance file over
-copy the ec2-instances.json to instance.json
+copy the vmware-instances.json to instance.json
 
 
 # Update line below in the "import.sh" script
