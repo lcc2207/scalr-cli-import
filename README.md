@@ -55,6 +55,6 @@ PowerCLI:
 $vcenter = Connect-viserver fqdnforVC -User userid -Password xxx
 get-vm | ForEach-Object {$_.ExtensionData.Moref.Value} | Out-File imports
 
-# if you want to get the name of the instaces - but you will need to remove the name 
+** if you want to get the name of the instaces - but you will need to remove the name 
 row before running!!
 get-vm | ForEach-Object {$_.Name + ", " + $_.ExtensionData.Moref.Value} | Out-File imports
