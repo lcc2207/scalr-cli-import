@@ -21,7 +21,7 @@ Get the instace ID from the AWS console or CLI and create a file named
   </tr>
 </table>
 
-#### copy the instance file over
+#### Copy the instance file over
 - Copy the ec2-instances.json to instance.json
 - Make sure to update the contents of the file to match your environment 
 
@@ -50,8 +50,8 @@ Get the instace ID from the VCenter or the PowerCLI and create a file named
 </table>
 
 
-#### copy the instance file over
-- copy the vmware-instances.json to instance.json
+#### Copy the instance file over
+- Copy the vmware-instances.json to instance.json
 - Make sure to update the contents of the file to match your environment 
 
 #### Update line below in the "import.sh" script with the actual farm role ID that the servers will be impprted into
@@ -86,3 +86,4 @@ If you would like to migrate a server after it has been imported you can run the
 IMPORTANT:
 - Servers must be agentless to migrate
 - Servers can only be migrated within the same environment
+- You can only migrate to a running farm
