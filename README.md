@@ -2,7 +2,7 @@
 
 This is an example script of how to use the Scalr-cli to import instances
 
-## AWS Imports
+## For AWS Imports
 
 Get the instace ID from the AWS console or CLI and create a file named
 * import_instances
@@ -18,11 +18,19 @@ Get the instace ID from the AWS console or CLI and create a file named
 </table>
 
 #### copy the instance file over
-copy the ec2-instances.json to instance.json
+- Copy the ec2-instances.json to instance.json
+- Make sure to update the contents of the file to match your environment 
+
+#### Update line below in the "import.sh" script
+* export farmRoleId=xxxx
+
+#### Execute
+```
+./import.sh
+```
 
 
-
-## VMWare Imports
+## For VMWare Imports
 
 Get the instace ID from the VCenter or the PowerCLI and create a file named
 * import_instances
@@ -39,8 +47,8 @@ Get the instace ID from the VCenter or the PowerCLI and create a file named
 
 
 #### copy the instance file over
-copy the vmware-instances.json to instance.json
-
+- copy the vmware-instances.json to instance.json
+- Make sure to update the contents of the file to match your environment 
 
 #### Update line below in the "import.sh" script
 * export farmRoleId=xxxx
