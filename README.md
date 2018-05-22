@@ -17,7 +17,7 @@ Get the instace ID from the AWS console or CLI and create a file named
   </tr>
 </table>
 
-# copy the instance file over
+#### copy the instance file over
 copy the ec2-instances.json to instance.json
 
 ## VMWare Imports
@@ -36,25 +36,30 @@ Get the instace ID from the VCenter or the PowerCLI and create a file named
 </table>
 
 
-# copy the instance file over
+#### copy the instance file over
 copy the vmware-instances.json to instance.json
 
 
-# Update line below in the "import.sh" script
+#### Update line below in the "import.sh" script
 * export farmRoleId=xxxx
 
-# Execute
+#### Execute
+```
 ./import.sh
-
+```
 
 ## VMware Notes
 
 You can use the PowerCLI to obtain the vm-xxx id numbers
 
 PowerCLI:
+```
 $vcenter = Connect-viserver fqdnforVC -User userid -Password xxx <br />
 get-vm | ForEach-Object {$_.ExtensionData.Moref.Value} | Out-File imports <br />
+```
 
 ** if you want to get the name of the instaces - but you will need to remove the name 
 row before running!!<br />
+```
 get-vm | ForEach-Object {$_.Name + ", " + $_.ExtensionData.Moref.Value} | Out-File imports
+```
