@@ -1,0 +1,17 @@
+{
+  "alias": "import-test",
+  "cloudServerId": "vm-12",
+  "cloudPlatform": "vmware",
+  "cloudLocation": "datacenter-21",
+  "instanceType":{"id":"0fxxxxx"},
+  "placement": {
+  "region": "datacenter-1"
+  },
+  "platform": "vmware",
+  "role": {
+    "id": 9
+  },
+  "scaling": {
+    "enabled": false
+  }
+}
