@@ -84,6 +84,6 @@ If you would like to migrate a server after it has been imported you can run the
 /opt/scalr-server/embedded/bin/php /opt/scalr-server/embedded/scalr/app/bin/move-server.php --server-ids=ID1,ID2,ID3 --farm-role-id=YYYY
 ```
 IMPORTANT:
-- Servers must be agentless to migrate
-- Servers can only be migrated within the same environment
-- You can only migrate to a running farm
+- Servers must be agentless to migrate.
+- The Environment Id, Cloud Platform, CloudLocation, and OS should be equal for the farm role source and destination.
+- You can only migrate to a running farm.
